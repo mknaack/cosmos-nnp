@@ -1,0 +1,18 @@
+{
+    // "image": "azure-cosmos-db-base:latest",
+    //"image": "mknaack/azure-cosmos-db-base:0.8",
+    "image": "ocaml/opam:debian-11-ocaml-4.14-nnpchecker@sha256:7bcef2347ced204f0191620817e609b7fe18c86d2e7e8b095a794a2e4d3c7208",
+    "runArgs": [
+        "--privileged"
+    ],
+    "name": "cosmos-nnp",
+    // "build":{"dockerfile": "Dockerfile", "context": ".."},
+    // "postStartCommand": "eval $(opam env)",
+    "extensions": [
+        "ocamllabs.ocaml-platform",
+        "mutantdino.resourcemonitor"
+    ]
+    // "postCreateCommand": "opam install . --deps-only --with-test",
+    //"postStartCommand": "eval $(opam env)"
+    // "runArgs": ["--env-file",".devcontainer/devcontainer.env"]
+}

@@ -1,0 +1,4 @@
+(executable
+ (public_name cosmos_nnp)
+ (name main)
+ (libraries cohttp cohttp-lwt-unix))
